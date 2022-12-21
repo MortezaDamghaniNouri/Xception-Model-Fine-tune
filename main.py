@@ -47,10 +47,7 @@ train_labels = np.array(train_labels)
 test_images = np.array(test_images)
 test_labels = np.array(test_labels)
 # loading the Xception model
-base_model = keras.applications.Xception(
-    weights='imagenet',
-    input_shape=(256, 256, 3),
-    include_top=False)
+base_model = keras.applications.Xception(weights='imagenet', input_shape=(256, 256, 3), include_top=False)
 # freezing the weights of the base model
 base_model.trainable = False
 # creating a new model on top
@@ -69,7 +66,7 @@ axis[0].set_title("Validation Data Accuracy (transfer learning)")
 axis[1].plot(history.history["val_loss"])
 axis[1].set_title("Validation Data Loss (transfer learning)")
 plt.show()
-
+print("Unfreezing the base model and starting fine tuning...")
 # unfreezing the base model
 base_model.trainable = True
 # fine tuning the model
