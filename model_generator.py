@@ -1,3 +1,9 @@
+"""
+This script generates a model using fine tuning. The model analyzes chest x-ray images,
+and determines whether a patient has pneumonia or not. The base model which is used for fine tuning is Xception.
+"""
+
+
 import os
 from PIL import Image
 import numpy as np
@@ -59,7 +65,7 @@ model = keras.Model(inputs, outputs)
 # training the model
 model.compile(optimizer=keras.optimizers.Adam(), loss=keras.losses.BinaryCrossentropy(from_logits=True), metrics=["accuracy"])
 model.summary()
-history = model.fit(train_images, train_labels, epochs=1, batch_size=32, validation_data=(test_images, test_labels))
+history = model.fit(train_images, train_labels, epochs=10, batch_size=32, validation_data=(test_images, test_labels))
 fig, axis = plt.subplots(2, 1)
 axis[0].plot(history.history["val_accuracy"])
 axis[0].set_title("Validation Data Accuracy (transfer learning)")
@@ -71,7 +77,7 @@ print("Unfreezing the base model and starting fine tuning...")
 base_model.trainable = True
 # fine tuning the model
 model.compile(optimizer=keras.optimizers.Adam(1e-5), loss=keras.losses.BinaryCrossentropy(from_logits=True), metrics=["accuracy"])
-history = model.fit(train_images, train_labels, epochs=1, batch_size=32, validation_data=(test_images, test_labels))
+history = model.fit(train_images, train_labels, epochs=5, batch_size=32, validation_data=(test_images, test_labels))
 fig, axis = plt.subplots(2, 1)
 axis[0].plot(history.history["val_accuracy"])
 axis[0].set_title("Validation Data Accuracy (fine tuning)")
