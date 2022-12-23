@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6008aa53-4103-40c8-8586-b0352e8dd7a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model 1.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model 2.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model 3.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model 4.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t_epoch=1, f_epoch=2, accuracy=.h5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xception_model_5_fold_cross_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/xception_model_5_fold_cross_validation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +157,7 @@
       <workItem from="1671701766630" duration="768000" />
       <workItem from="1671702837915" duration="198000" />
       <workItem from="1671703049200" duration="1634000" />
-      <workItem from="1671705693446" duration="2505000" />
+      <workItem from="1671705693446" duration="20807000" />
     </task>
     <servers />
   </component>
@@ -165,22 +172,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1671705707106" />
-    <state width="1493" height="187" key="GridCell.Tab.0.bottom" timestamp="1671706514845">
+    <state width="1493" height="176" key="GridCell.Tab.0.bottom" timestamp="1671815457442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1671706514845" />
-    <state width="1493" height="187" key="GridCell.Tab.0.center" timestamp="1671706514845">
+    <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1671815457442" />
+    <state width="1493" height="176" key="GridCell.Tab.0.center" timestamp="1671815457442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1671706514845" />
-    <state width="1493" height="187" key="GridCell.Tab.0.left" timestamp="1671706514844">
+    <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1671815457442" />
+    <state width="1493" height="176" key="GridCell.Tab.0.left" timestamp="1671815457442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1671706514844" />
-    <state width="1493" height="187" key="GridCell.Tab.0.right" timestamp="1671706514845">
+    <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1671815457442" />
+    <state width="1493" height="176" key="GridCell.Tab.0.right" timestamp="1671815457442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1671706514845" />
+    <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1671815457442" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1671648944753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -196,7 +203,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Xception_Model__fine_tune_$Image_Processor.coverage" NAME="Image Processor Coverage Results" MODIFIED="1671614470245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Xception_Model__fine_tune_$xception_model_5_fold_cross_validation.coverage" NAME="xception_model_5_fold_cross_validation Coverage Results" MODIFIED="1671706350842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Xception_Model__fine_tune_$xception_model_5_fold_cross_validation.coverage" NAME="xception_model_5_fold_cross_validation Coverage Results" MODIFIED="1671715444397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Xception_Model__fine_tune_$model_generator__using_255_.coverage" NAME="model_generator (using 255) Coverage Results" MODIFIED="1671703469045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Xception_Model__fine_tune_$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1671660067603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

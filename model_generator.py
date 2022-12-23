@@ -3,7 +3,6 @@ This script generates a model using fine tuning. The model analyzes chest x-ray 
 and determines whether a patient has pneumonia or not. The base model which is used for fine tuning is Xception.
 """
 
-
 import os
 from PIL import Image
 import numpy as np

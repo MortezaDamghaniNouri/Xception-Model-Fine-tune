@@ -1,3 +1,8 @@
+"""
+This script trains a model for pneumonia detection, and it uses fine-tuning method. It uses the Xception model
+as the base model. 5-fold cross validation is used for evaluation, and after the evaluation the accuracy of
+each fold and the mean accuracy will be printed.
+"""
 
 import os
 from PIL import Image
@@ -98,11 +103,9 @@ while i <= fold_number:
     outputs = keras.layers.Dense(1)(x)
     model = keras.Model(inputs, outputs)
     # training the model
-    model.compile(optimizer=keras.optimizers.Adam(), loss=keras.losses.BinaryCrossentropy(from_logits=True),
-                  metrics=["accuracy"])
+    model.compile(optimizer=keras.optimizers.Adam(), loss=keras.losses.BinaryCrossentropy(from_logits=True), metrics=["accuracy"])
     model.summary()
-    history = model.fit(train_images, train_labels, epochs=10, batch_size=32,
-                        validation_data=(test_images, test_labels))
+    history = model.fit(train_images, train_labels, epochs=10, batch_size=32, validation_data=(test_images, test_labels))
     fig, axis = plt.subplots(2, 1)
     axis[0].plot(history.history["val_accuracy"])
     axis[0].set_title("Validation Data Accuracy (transfer learning)")
@@ -113,9 +116,8 @@ while i <= fold_number:
     # unfreezing the base model
     base_model.trainable = True
     # fine tuning the model
-    model.compile(optimizer=keras.optimizers.Adam(1e-5), loss=keras.losses.BinaryCrossentropy(from_logits=True),
-                  metrics=["accuracy"])
-    history = model.fit(train_images, train_labels, epochs=5, batch_size=32, validation_data=(test_images, test_labels))
+    model.compile(optimizer=keras.optimizers.Adam(1e-5), loss=keras.losses.BinaryCrossentropy(from_logits=True), metrics=["accuracy"])
+    history = model.fit(train_images, train_labels, epochs=2, batch_size=32, validation_data=(test_images, test_labels))
     fig, axis = plt.subplots(2, 1)
     axis[0].plot(history.history["val_accuracy"])
     axis[0].set_title("Validation Data Accuracy (fine tuning)")
