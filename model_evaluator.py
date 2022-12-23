@@ -32,6 +32,7 @@ test_labels = np.array(test_labels)
 model_address = input("Enter the full address of the model which you want to evaluate (example: models//model.h5): ")
 model = load_model(model_address)
 # evaluating the model
+print("Evaluating the model...")
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 print("Accuracy: " + str(round(test_acc * 100, 2)) + " %")
 
